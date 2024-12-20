@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Physics Lecture Notes</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-size: cover;
+        background-position: center;
+      "
+    ></div>
+    <div style="
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+    gap: 20px;
+
+    ">
+    <h1 class="title">Physics Lecture Notes</h1>
+    
+   
+   
+  </div>
+    <div class="container">
+      <div id="backgroundContainer"></div>
+      <select id="yearSelect" onchange="showLinks()">
+        <option value="0">Select year &#x2BC6</option>
+        <option value="2">Second year</option>
+        <option value="3">Third year</option>
+      </select>
+      <ul id="linkList2" style="display: none">
+        <li>
+          <a href="meccanica-analitica.pdf" data-image="meccanica-analitica.jpg"
+            >Meccanica Analitica</a
+          >
+        </li>
+        <li>
+          <a href="fenomeni-ondulatori.pdf" data-image="fenomeni-ondulatori.png"
+            >Fenomeni Ondulatori</a
+          >
+        </li>
+        <li>
+          <a
+            href="relativita-ristretta.pdf"
+            data-image="relativita-ristretta.png"
+            >Relatività Ristretta</a
+          >
+        </li>
+      </ul>
+      <ul id="linkList3" style="display: none">
+        <li>
+          <a
+            href="meccanica-quantistica.pdf"
+            data-image="meccanica-quantistica.jpg"
+            >Meccanica Quantistica</a
+          >
+        </li>
+        <li>
+          <a
+            href="fisica-nucleare-e-subnucleare.pdf"
+            data-image="fisica-nucleare-e-subnucleare.jpg"
+            >Fisica Nucleare e Subnucleare</a
+          >
+        </li>
+        <li>
+          <a href="astrofisica.pdf" data-image="astrofisica.jpg">Astrofisica</a>
+        </li>
+        <li>
+          <a
+            href="statistical-physics.pdf"
+            data-image="statistical-physics.jpg"
+            >Statistical Physics</a
+          >
+        </li>
+        <li>
+          <a
+            href="laboratorio-di-elettronica.pdf"
+            data-image="laboratorio-di-elettronica.jpg"
+            >Laboratorio di Elettronica</a
+          >
+        </li>
+      </ul>
+    </div>
+
+   
+    <p>
+      Lecture notes for the Physics BcE course at Alma Mater Studiorum -
+      Università di Bologna. <br />
+    </p>
+   
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
